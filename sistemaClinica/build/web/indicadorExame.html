@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IndicadorExame</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+    </head>
+    <body>
+        <h1>Cadastro de Indicador de Exame</h1>
+        
+        <!--Formulário de Cadastro-->
+        <form action="/sistemaClinica/IndicadorExameServlet" method="post">
+            <!--CODIGO-->
+            <label for="codigo">Codigo:</label>
+            <input type="number" id="codigo" name="codigo" required>
+            
+            <!--INDICADOR-->
+            <label for="indicador">indicador</label>
+            <input type="text" id="indicador" name="indicador" required>
+            
+            <!--DESCRICAO-->
+            <label for="descricao">Descricao:</label>
+            <input type="text" id="descricao" name="descricao" required>
+            
+            <!--minValorReferencia-->
+            <label for="minValorReferencia">MinValorReferencia</label>
+            <input type="text" id="minValorReferencia" name="minValorReferencia" required>
+            
+            <!--maxValorReferencia-->
+            <label for="maxValorReferencia">MaxValorReferencia</label>
+            <input type="text" id="maxValorReferencia" name="maxValorReferencia" required>
+            
+            <button type="submit">
+                Enviar
+            </button>
+        
+            
+        </form> 
+            
+        <!--Lista dos Indicadores-->
+        <div class="listagem">
+            <a href="/sistemaClinica/IndicadorExameServlet" class="botao">
+                Listar Indicadores
+            </a>
+ 
+        </div>
+            
+    </body>
+</html>

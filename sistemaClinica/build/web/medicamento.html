@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Medicamento</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">    
+    </head>
+    <body>
+        <h1>Cadastro de Medicamento</h1>
+        
+        <!--Formulário de Cadastro-->
+        <form action="/sistemaClinica/MedicamentoServlet" method="post">
+            <!--CODIGO-->
+            <label for="codigo">Codigo:</label>
+            <input type="number" id="codigo" name="codigo" required>
+            
+            <!--NOME-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <!--DOSAGEM-->
+            <label for="dosagem">Dosagem:</label>
+            <input type="number" id="dosagem" name="dosagem" required>
+            
+            <!--TIPO DOSAGEM-->
+            <label for="tipoDosagem">TipoDosagem:</label>
+            <input type="text" id="tipoDosagem" name="tipoDosagem" required>
+            
+            <!--DESCRICAO-->
+            <label for="descricao">Descricao:</label>
+            <input type="text" id="descricao" name="descricao" required>
+            
+            <!--OBSERVACAO-->
+            <label for="observacao">Observacao</label>
+            <input type="text" id="observacao" name="observacao" required>
+            
+            <button type="submit">
+                Enviar
+            </button>
+        
+        </form>    
+            
+        <!--Lista dos Medicamentos-->
+        <div class="listagem">
+            <a href="/sistemaClinica/MedicamentoServlet" class="botao">
+                Listar Medicamentos
+            </a>
+ 
+        </div>
+            
+    </body>
+</html>

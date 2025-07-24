@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Paciente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+    </head>
+    <body>
+        <h1>Cadastro de Paciente</h1>
+        
+        <!--Formulário de Cadastro-->
+        <form action="/sistemaClinica/PacienteServlet" method="post">
+            <!--CPF-->
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+            
+            <!--NOME-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <!--ENDEREÇO-->
+            <label for="endereco">Endereco:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <!--CONTATO-->
+            <label for="contato">Contato:</label>
+            <input type="text" id="contato" name="contato" required>
+            
+            <!--PLANO DE SAUDE-->
+            <label for="planoSaude">PlanoSaude:</label>
+            <input type="text" id="planoSaude" name="planoSaude" required>
+            
+            <button type="submit">
+                Enviar
+            </button>
+            
+        </form>
+
+        <!--Lista dos Pacientes-->
+        <div class="listagem">
+            <a href="/sistemaClinica/PacienteServlet" class="botao">
+                Listar Pacientes
+            </a>
+ 
+        </div>
+            
+    </body>
+</html>
